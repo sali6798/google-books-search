@@ -1,0 +1,15 @@
+.Search {
+    margin-bottom: 30px;
+}
+
+.Search .uk-search {
+    width: 100%;
+}
+
+.Search .uk-search button {
+    background-color: rgb(213, 227, 241);
+}
+
+.Search form {
+    margin: 20px 0;
+}
