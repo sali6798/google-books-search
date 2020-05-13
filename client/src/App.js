@@ -1,19 +1,22 @@
 import React from 'react';
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
+import Nav from "./components/Nav"
+import Jumbotron from "./components/Jumbotron"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Nav />
-        <Switch>
-          {/* <Route exact path={["/", "/books"]} component={Books} /> */}
-          <Route exact path="/saved" component={Saved} />
-          <Route exact path="*" component={Search} />
-          {/* <Route component={NoMatch} /> */}
-        </Switch>
+      <Nav />
+      <div className="uk-container">
+        <Jumbotron />
+        <div className="results-container">
+          <Switch>
+            <Route exact path="/saved" component={Saved} />
+            <Route exact path="*" component={Search} />
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
   );
