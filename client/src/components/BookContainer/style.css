@@ -1,0 +1,23 @@
+.BookContainer {
+    margin-bottom: 10px;
+}
+
+.BookContainer h5 {
+    margin-top: 0;
+}
+
+.BookContainer h3,  .BookContainer h5 {
+    margin-bottom: 5px;
+}
+
+.BookContainer .buttonContainer {
+    text-align: right;
+}
+
+.buttonContainer .uk-button {
+    margin-left: 10px;
+}
+
+.buttonContainer button {
+    background-color: rgb(213, 227, 241);
+}
