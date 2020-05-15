@@ -2,6 +2,10 @@
     margin-bottom: 30px;
 }
 
+.Search form {
+    margin: 20px 0;
+}
+
 .Search .uk-search {
     width: 100%;
 }
@@ -10,6 +14,6 @@
     background-color: rgb(213, 227, 241);
 }
 
-.Search form {
-    margin: 20px 0;
+.Search .error {
+    margin-top: 0;
 }

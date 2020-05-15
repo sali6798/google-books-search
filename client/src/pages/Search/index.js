@@ -29,6 +29,7 @@ function Search() {
 
         API.search(search)
             .then(({ data }) => {
+                console.log(data.items)
                 setBooks(data.items);
             })
             .catch(err => console.log(err))
@@ -79,7 +80,7 @@ function Search() {
                 <button className="uk-search-icon-flip" type="submit" uk-search-icon="true"></button>
                 <input className="uk-search-input" type="search" value={search} placeholder="Search For A Book" onChange={handleInputChange} />
             </form>
-            {books.map(book => displayBook(book))}
+            {!books ? <h3 className="error">No books exist with this title!</h3> : books.map(book => displayBook(book))}
         </div>
     );
 }
