@@ -29,7 +29,6 @@ function Search() {
 
         API.search(search)
             .then(({ data }) => {
-                console.log(data.items)
                 setBooks(data.items);
             })
             .catch(err => console.log(err))
